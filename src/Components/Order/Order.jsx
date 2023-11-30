@@ -53,7 +53,7 @@ const Order = () => {
             <div className="cart-container">
                 <Cart cart={cart} handleClearCart={handleClearCart}>
                     <Link to="/checkout" className='link-text'><button className='btn-procced-cart2'>Procced to chekout
-                        <FontAwesomeIcon icon={faTrashAlt} />
+                        <FontAwesomeIcon icon={faShoppingCart} />
                     </button></Link>
                 </Cart>
 
