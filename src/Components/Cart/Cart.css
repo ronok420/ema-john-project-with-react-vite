@@ -6,3 +6,27 @@
     top: 0;
     border-bottom-left-radius: 20px;
 }
+.btn-clear-cart{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 56px;
+    font-size: 21px;
+    margin: 10px auto;
+    background: #ff3030;
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+}
+.btn-procced-cart2{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 56px;
+    font-size: 21px;
+    margin: 10px auto;
+    background: rgba(255, 166, 0, 0.91);
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+}
