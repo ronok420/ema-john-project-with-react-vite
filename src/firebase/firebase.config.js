@@ -5,7 +5,6 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export default app;

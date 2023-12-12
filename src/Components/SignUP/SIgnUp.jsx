@@ -33,7 +33,7 @@ const SIgnUp = () => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 form.reset();
-                setSuccess('login success')
+                setSuccess('signUP success')
             })
             .catch(error => console.error(error))
 
@@ -66,7 +66,7 @@ const SIgnUp = () => {
             </form>
             <p><small>already have an account?<Link to="/login">login</Link></small></p>
             <p style={{ color: 'red' }}>{error}</p>
-            <p style={{ color: 'red' }}>{success}</p>
+            <p style={{ color: 'green' }}>{success}</p>
         </div>
     );
 };
