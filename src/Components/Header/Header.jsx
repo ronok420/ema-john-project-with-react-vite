@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css'
 // import logo from '../../images/Logo.svg'
 import logo from '../../images/Logo.svg'
 import { Link } from 'react-router-dom';
+import { Authcontext } from '../AuthProvider/AuthProvider';
 
 const Header = () => {
+    const {user}= useContext(Authcontext);
     return (
         <nav className='header'>
            
@@ -15,6 +17,7 @@ const Header = () => {
             <Link to="/inventory">inventory</Link>
             <Link to="/login">login</Link>
             <Link to="/signup">SignUp</Link>
+           
             </div>
             
         </nav>
