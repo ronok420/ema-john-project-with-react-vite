@@ -7,6 +7,7 @@ const Login = () => {
     const {userSignIn} =useContext(Authcontext);
     const [success, setSuccess] = useState('');
     const [error, setError] = useState('');
+    const [show,setShow] =useState(true);
     const navigate= useNavigate();
     const location =useLocation();
     console.log(location);
@@ -46,7 +47,10 @@ const Login = () => {
                 </div>
                 <div className="form-control">
                 <label htmlFor="password">password</label>
-                    <input type="password" name="password" id="" />
+                    <input type={show? 'password' : "text"} name="password" id="" />
+                    <p onClick={()=>setShow(!show)}><small>{
+                        show? <button>show password</button> : <button>hide password</button>} 
+                        </small></p>
                    
                 </div>
                 <input className='btn-btn-submit' type="submit" value="login" />

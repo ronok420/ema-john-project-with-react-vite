@@ -17,7 +17,7 @@ const Order = () => {
 
     const deleteCartProduct = (id) => {
         console.log(id);
-        const deleteCart = cart.filter(pd => pd.id !== id);
+        const deleteCart = cart.filter(pd => pd._id !== id);
         setCart(deleteCart);
         removeFromDb(id);
 
@@ -25,7 +25,7 @@ const Order = () => {
 
     // const deleteCartProduct = (id) => {
     //     console.log(id);
-    //     const updatedCart = cart.filter((pd) => pd.id !== id);
+    //     const updatedCart = cart.filter((pd) => pd._id !== id);
     //     setCart([...updatedCart]); // Use the spread operator to create a new array reference
     // };
 
@@ -43,7 +43,7 @@ const Order = () => {
                 <h2>Distinct Order item:{cart.length} </h2>
                 {
                     cart.map(product => <Reviewitem
-                        key={product.id} product={product} deleteCartProduct={deleteCartProduct}
+                        key={product._id} product={product} deleteCartProduct={deleteCartProduct}
                         handleClearCart={handleClearCart}
                     ></Reviewitem>)
                 }
