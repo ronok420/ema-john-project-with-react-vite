@@ -13,3 +13,10 @@ body{
     gap: 50px;
     margin: 50px;
 }
+.pagination{
+    text-align: center;
+    /* font-weight: 800; */
+}
+.selected{
+    background-color: salmon;
+}
